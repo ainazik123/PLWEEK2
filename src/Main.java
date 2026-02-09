@@ -1,13 +1,19 @@
-//TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
-// click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
-void main() {
-  //TIP Press <shortcut actionId="ShowIntentionActions"/> with your caret at the highlighted text
-  // to see how IntelliJ IDEA suggests fixing it.
-  IO.println(String.format("Hello and welcome!"));
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.HashSet;
 
-  for (int i = 1; i <= 5; i++) {
-    //TIP Press <shortcut actionId="Debug"/> to start debugging your code. We have set one <icon src="AllIcons.Debugger.Db_set_breakpoint"/> breakpoint
-    // for you, but you can always add more by pressing <shortcut actionId="ToggleLineBreakpoint"/>.
-    IO.println("i = " + i);
-  }
+public class Main {
+    public static void main(String[] args) {
+
+
+        ArrayList<Integer> numbers = new ArrayList<>(Arrays.asList(
+                1, 2, 2, 3, 4, 4, 4, 5
+        ));
+
+
+        HashSet<Integer> uniqueNumbers = new HashSet<>(numbers);
+
+
+        System.out.println("Unique values: " + uniqueNumbers);
+    }
 }
